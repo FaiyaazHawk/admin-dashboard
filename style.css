@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of reset */
+
+/*font import*/
+
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto-Bold.ttf);
+}
+
+/*main body*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+	width: 100vw;
+}
+/*sidebar section*/
+nav {
+	color: white;
+}
+nav  a {
+	text-decoration: none;
+	color: inherit;
+}
+.sidebar {
+    font-family: Roboto;
+    display: grid;
+	grid-template-rows: auto 1fr 1fr;
+	gap: 20px;
+}
+.sidebar ul {
+	display: grid;
+	row-gap: 15px;
+}
+
+.sidebar-logo {
+	font-size: 2rem;
+	display: flex;
+}
+.sidebar-upper {
+	display: grid;
+	
+}
+
+.sidebar-lower ul {
+	margin-top: 30px;
+	display: grid;
+	row-gap: 15px;
+}
+
+/*header section*/
+header {
+	background-color: rgb(116, 116, 155);
+	font-family: Roboto;
+}
+
+nav {
+	grid-row: 1 / 4;
+	background-color: rgb(33, 175, 231);
+}
+
+.content-container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+
+}
+
+main {
+	grid-column-start: 2;
+	background-color: aquamarine;
+}
+
+/*CARD*/
+
+.card {
+	background-color: antiquewhite;
+	border-radius: 10px;
+	
+}
+
+
+
+/*trending container*/
+
+.trending-container {
+	grid-column-start: 2;
+}
+
+
+
+
+
+footer {
+	grid-column-start: 1;
+	background-color: brown;
+	grid-column-start: 2;
+}
