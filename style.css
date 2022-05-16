@@ -80,14 +80,17 @@ nav  a {
 .sidebar ul {
 	display: grid;
 	row-gap: 15px;
+	margin-left: 15px;
 }
 
 .sidebar-logo {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	display: flex;
+	margin-left: 15px;
+	padding-right: 25px;
 }
-.sidebar-upper {
-	display: grid;
+.sidebar-upper li {
+	
 	
 }
 
@@ -96,17 +99,41 @@ nav  a {
 	display: grid;
 	row-gap: 15px;
 }
-
-/*header section*/
-header {
-	background-color: rgb(116, 116, 155);
-	font-family: Roboto;
-}
-
 nav {
 	grid-row: 1 / 4;
 	background-color: rgb(33, 175, 231);
 }
+
+/*header section*/
+header {
+	background-color: rgb(233, 233, 241);
+	font-family: Roboto;
+}
+.navbar {
+
+}
+.navbar-top {
+	
+}
+.navbar-topleft {
+	
+}
+.navbar-topright {
+	
+}
+
+.navbar-bottom{
+	
+}
+.navbar-bottomleft {
+	
+}
+.navbar-bottomright {
+	
+}
+
+
+/*main body*/
 
 .content-container {
 	display: grid;
