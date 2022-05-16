@@ -133,7 +133,7 @@ header {
 .navbar-topright {
 	grid-column: 2 / 3;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	justify-items: flex-end;
 	margin-right: 30px;
 	align-items: center;
@@ -162,11 +162,18 @@ header {
 	padding: 5px 10px 5px 10px;
 }
 
+.headerbtn:hover {
+	background-color: aliceblue;
+	color: black;
+	transition: 0.7ms;
+}
 
 /*main body*/
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
+	margin-left: 5px;
+	
 }
 h3 {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -227,13 +234,31 @@ h4 {
 .trending-container {
 	grid-column-start: 2;
 }
+.users {
+	background-color:rgb(233, 233, 241);
+	border-radius: 10px;
+	margin-top: 5px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.user-block {
+	display: flex;
+	padding: 10px;
+}
 
 
-
-
+/*Footer*/
 
 footer {
 	grid-column-start: 1;
-	background-color: brown;
+	background-color: rgb(59, 132, 228);
 	grid-column-start: 2;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
 }
