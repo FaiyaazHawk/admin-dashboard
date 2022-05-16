@@ -108,28 +108,51 @@ nav {
 header {
 	background-color: rgb(233, 233, 241);
 	font-family: Roboto;
-}
-.navbar {
-
-}
-.navbar-top {
 	
 }
+.navbar {
+	display: grid;
+	grid-template-columns: 2.5fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	
+}
+
 .navbar-topleft {
 	
 }
-.navbar-topright {
-	
+.navbar-topleft > input {
+	width:400px;
+	border-radius: 30px;
+	box-shadow: 5px;
+	background-color: rgb(185, 215, 218);
 }
 
-.navbar-bottom{
-	
+.navbar-topright {
+	grid-column: 2 / 3;
+	display: flex;
 }
+#profilepicL {
+	height: 40px;
+	width: auto;
+}
+
+
 .navbar-bottomleft {
-	
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	display: flex;
 }
 .navbar-bottomright {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	
+}
+.headerbtn {
+	color: white;
+	background-color: rgb(33, 175, 231);
+	border-radius: 20px;
+	padding: 5px 10px 5px 10px;
 }
 
 
